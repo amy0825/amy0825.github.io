@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H. Jansma</title>
+    <title>Amy Liu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -69,6 +69,14 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             width: 200px;
             text-align: left;
+            transition: transform 0.2s;
+        }
+        .area:hover {
+            transform: scale(1.05);
+        }
+        .area a {
+            text-decoration: none;
+            color: #000;
         }
         .projects {
             display: flex;
@@ -88,7 +96,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>H. Jansma</h1>
+        <h1>Amy Liu</h1>
     </div>
     <div class="nav">
         <a href="#">Home</a>
@@ -99,7 +107,7 @@
         <a href="#">Resume</a>
     </div>
     <div class="section">
-        <h2>I am Harrison Jansma</h2>
+        <h2>I am Amy Liu</h2>
         <p>Contemplative coder and analyst. Inspired by tough problems.</p>
         <a href="#" class="button">MY PROJECTS</a>
     </div>
@@ -108,28 +116,40 @@
         <p>Take a look at some of the things I love working on.</p>
         <div class="areas">
             <div class="area">
-                <h3>Cloud Compute</h3>
-                <p>I maintain servers for database storage, model training, and model deployment.</p>
+                <a href="#cloud-compute">
+                    <h3>Cloud Compute</h3>
+                    <p>I maintain servers for database storage, model training, and model deployment.</p>
+                </a>
             </div>
             <div class="area">
-                <h3>NLP</h3>
-                <p>I have worked with researchers to apply NLP techniques to make sense of the motivations behind human interactions.</p>
+                <a href="#nlp">
+                    <h3>NLP</h3>
+                    <p>I have worked with researchers to apply NLP techniques to make sense of the motivations behind human interactions.</p>
+                </a>
             </div>
             <div class="area">
-                <h3>Machine Learning</h3>
-                <p>Machine learning is more than an API call to scikit-learn. I love the math and theory as well as the implementation.</p>
+                <a href="#machine-learning">
+                    <h3>Machine Learning</h3>
+                    <p>Machine learning is more than an API call to scikit-learn. I love the math and theory as well as the implementation.</p>
+                </a>
             </div>
             <div class="area">
-                <h3>Parallel Computing</h3>
-                <p>I regularly extract data from Hadoop databases using the HIVE framework.</p>
+                <a href="#parallel-computing">
+                    <h3>Parallel Computing</h3>
+                    <p>I regularly extract data from Hadoop databases using the HIVE framework.</p>
+                </a>
             </div>
             <div class="area">
-                <h3>Model Deployment</h3>
-                <p>I implement machine learning models in real world production systems using REST APIs.</p>
+                <a href="#model-deployment">
+                    <h3>Model Deployment</h3>
+                    <p>I implement machine learning models in real world production systems using REST APIs.</p>
+                </a>
             </div>
             <div class="area">
-                <h3>Data Analytics</h3>
-                <p>I love telling a story. Making a beautiful and compelling presentation is one of my favorite skills.</p>
+                <a href="#data-analytics">
+                    <h3>Data Analytics</h3>
+                    <p>I love telling a story. Making a beautiful and compelling presentation is one of my favorite skills.</p>
+                </a>
             </div>
         </div>
     </div>
