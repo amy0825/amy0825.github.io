@@ -4,50 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的作品</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #666;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 5px;
-        }
-        nav a:hover {
-            background-color: #444;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -64,7 +21,15 @@
     </section>
     <section id="portfolio">
         <h2>作品集</h2>
-        <p>在这里展示你的作品。可以是图片、视频、或者链接到你的项目或作品集。</p>
+        <div class="project">
+            <h3>作品标题 1</h3>
+            <p>作品描述 1。 <a href="#">查看详情</a></p>
+        </div>
+        <div class="project">
+            <h3>作品标题 2</h3>
+            <p>作品描述 2。 <a href="#">查看详情</a></p>
+        </div>
+        <!-- 添加更多作品 -->
     </section>
     <section id="contact">
         <h2>联系我</h2>
