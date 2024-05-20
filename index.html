@@ -1,42 +1,158 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的作品</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>H. Jansma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+        }
+        .section p {
+            margin-bottom: 40px;
+        }
+        .button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .areas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .area {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 200px;
+            text-align: left;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>欢迎来到我的作品网站</h1>
-    </header>
-    <nav>
-        <a href="#about">关于我</a>
-        <a href="#portfolio">作品集</a>
-        <a href="#contact">联系我</a>
-    </nav>
-    <section id="about">
-        <h2>关于我</h2>
-        <p>在这里写一段介绍自己的文字，可以包括你的背景、技能、擅长的领域等等。</p>
-    </section>
-    <section id="portfolio">
-        <h2>作品集</h2>
-        <div class="project">
-            <h3>作品标题 1</h3>
-            <p>作品描述 1。 <a href="#">查看详情</a></p>
+    <div class="header">
+        <h1>H. Jansma</h1>
+    </div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Huck</a>
+        <a href="#">The Fiancé</a>
+        <a href="#">Resume</a>
+    </div>
+    <div class="section">
+        <h2>I am Harrison Jansma</h2>
+        <p>Contemplative coder and analyst. Inspired by tough problems.</p>
+        <a href="#" class="button">MY PROJECTS</a>
+    </div>
+    <div class="section">
+        <h2>Areas of Interest</h2>
+        <p>Take a look at some of the things I love working on.</p>
+        <div class="areas">
+            <div class="area">
+                <h3>Cloud Compute</h3>
+                <p>I maintain servers for database storage, model training, and model deployment.</p>
+            </div>
+            <div class="area">
+                <h3>NLP</h3>
+                <p>I have worked with researchers to apply NLP techniques to make sense of the motivations behind human interactions.</p>
+            </div>
+            <div class="area">
+                <h3>Machine Learning</h3>
+                <p>Machine learning is more than an API call to scikit-learn. I love the math and theory as well as the implementation.</p>
+            </div>
+            <div class="area">
+                <h3>Parallel Computing</h3>
+                <p>I regularly extract data from Hadoop databases using the HIVE framework.</p>
+            </div>
+            <div class="area">
+                <h3>Model Deployment</h3>
+                <p>I implement machine learning models in real world production systems using REST APIs.</p>
+            </div>
+            <div class="area">
+                <h3>Data Analytics</h3>
+                <p>I love telling a story. Making a beautiful and compelling presentation is one of my favorite skills.</p>
+            </div>
         </div>
-        <div class="project">
-            <h3>作品标题 2</h3>
-            <p>作品描述 2。 <a href="#">查看详情</a></p>
+    </div>
+    <div class="section">
+        <h2>My Latest Projects</h2>
+        <p>Take a look at my recent work.</p>
+        <div class="projects">
+            <div class="project">
+                <h3>Automating AWS EC2 Shutdown with Bash Scripts</h3>
+                <p>Jan 20, 2020</p>
+                <p>A helpful tutorial I wrote recently on how to set up a Bash script that utilized the AWS CLI to start, log into, then shutdown an EC2 instance.</p>
+            </div>
+            <div class="project">
+                <h3>RNNs, LSTMs, and Attention Mechanisms for Language Modelling (PyTorch)</h3>
+                <p>Dec 10, 2019</p>
+                <p>Tested the use of Word2Vec embeddings with a variety of sequential input deep learning models towards the task of language modeling (predicting the next word in a sequence).</p>
+            </div>
+            <div class="project">
+                <h3>DavisBase: A Custom Designed Database (Python)</h3>
+                <p>Dec 2, 2019</p>
+                <p>A fully functional, SQL-compliant database implemented from scratch in Python. DavisBase compresses data to a custom-designed bit-level encoding for maximal data compression. By utilizing a file size of 512Kb, it ensures efficient storage and retrieval of data.</p>
+            </div>
         </div>
-        <!-- 添加更多作品 -->
-    </section>
-    <section id="contact">
-        <h2>联系我</h2>
-        <p>在这里提供联系方式，比如邮箱、社交媒体账号或者联系表单。</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 我的作品. 版权所有.</p>
-    </footer>
+    </div>
 </body>
 </html>
