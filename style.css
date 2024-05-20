@@ -1,0 +1,89 @@
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+        }
+        .section p {
+            margin-bottom: 40px;
+        }
+        .button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .areas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .area {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 200px;
+            text-align: left;
+            transition: transform 0.2s;
+        }
+        .area:hover {
+            transform: scale(1.05);
+        }
+        .area a {
+            text-decoration: none;
+            color: #000;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: left;
+        }
+    </style>
